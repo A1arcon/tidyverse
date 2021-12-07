@@ -35,6 +35,8 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -49,8 +51,8 @@
       <div class="navbar-brand-container">
         <a class="navbar-brand" href="../index.html">tidyverse</a>
         <div class="info hidden-xs hidden-sm">
-          <span class="partof">part of the <a href="https://tidyverse.org">tidyverse</a></span>
-          <span class="version version-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.3.1.9000</span>
+          <span class="partof">part of the <a href="https://tidyverse.org" class="external-link">tidyverse</a></span>
+          <span class="version version-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.1.9000</span>
         </div>
       </div>
     </div>
@@ -83,22 +85,23 @@
   <ul class="dropdown-menu" role="menu">
 <li class="dropdown-header">Release notes</li>
     <li>
-      <a href="https://www.tidyverse.org/blog/2019/11/tidyverse-1-3-0/">Version 1.3.0</a>
+      <a href="https://www.tidyverse.org/blog/2019/11/tidyverse-1-3-0/" class="external-link">Version 1.3.0</a>
     </li>
     <li>
-      <a href="https://www.tidyverse.org/blog/2017/11/tidyverse_1.2.0/">Version 1.2.0</a>
+      <a href="https://www.tidyverse.org/blog/2017/11/tidyverse_1.2.0/" class="external-link">Version 1.2.0</a>
     </li>
     <li>
-      <a href="https://blog.rstudio.com/2016/09/15/tidyverse-1-0-0/">Version 1.0.0</a>
+      <a href="https://blog.rstudio.com/2016/09/15/tidyverse-1-0-0/" class="external-link">Version 1.0.0</a>
     </li>
     <li class="divider">
-    <li>
+    </li>
+<li>
       <a href="../news/index.html">Change log</a>
     </li>
   </ul>
 </li>
         <li>
-  <a href="https://github.com/tidyverse/tidyverse/">
+  <a href="https://github.com/tidyverse/tidyverse/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -117,11 +120,11 @@
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>The tidy tools manifesto</h1>
-                        <h4 class="author">Hadley Wickham</h4>
+                        <h4 data-toc-skip class="author">Hadley Wickham</h4>
             
-            <h4 class="date">2021-10-29</h4>
+            <h4 data-toc-skip class="date">2021-12-07</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/tidyverse/tidyverse/blob/master/vignettes/manifesto.Rmd"><code>vignettes/manifesto.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/tidyverse/tidyverse/blob/HEAD/vignettes/manifesto.Rmd" class="external-link"><code>vignettes/manifesto.Rmd</code></a></small>
       <div class="hidden name"><code>manifesto.Rmd</code></div>
 
     </div>
@@ -138,17 +141,17 @@
 <li><p>Embrace functional programming.</p></li>
 <li><p>Design for humans.</p></li>
 </ol>
-<div id="reuse-existing-data-structures" class="section level2">
-<h2 class="hasAnchor">
-<a href="#reuse-existing-data-structures" class="anchor"></a>Reuse existing data structures</h2>
+<div class="section level2">
+<h2 id="reuse-existing-data-structures">Reuse existing data structures<a class="anchor" aria-label="anchor" href="#reuse-existing-data-structures"></a>
+</h2>
 <p>Where possible, re-use existing data structures, rather than creating custom data structures for your own package. Generally, I think it’s better to prefer common existing data structures over custom data structures, even if slightly ill-fitting.</p>
-<p>Many R packages (e.g. ggplot2, dplyr, tidyr) work with rectangular datasets made up of observations and variables. If this is true for your package, work with data in either a data frame or <a href="https://github.com/tidyverse/tibble">tibble</a>. Assume the data is tidy, with variables in the columns, and observations in the rows (see <a href="https://www.jstatsoft.org/article/view/v059i10"><em>Tidy Data</em></a> for more details).</p>
+<p>Many R packages (e.g. ggplot2, dplyr, tidyr) work with rectangular datasets made up of observations and variables. If this is true for your package, work with data in either a data frame or <a href="https://github.com/tidyverse/tibble" class="external-link">tibble</a>. Assume the data is tidy, with variables in the columns, and observations in the rows (see <a href="https://www.jstatsoft.org/article/view/v059i10" class="external-link"><em>Tidy Data</em></a> for more details).</p>
 <p>Some packages work at a lower level, focussing on a single type of variable. For example, <strong>stringr</strong> for strings, <strong>lubridate</strong> for date/times, and <strong>forcats</strong> for factors. Generally prefer existing base R vector types, but when this is not possible, create your own using an S3 class built on top of an atomic vector or list.</p>
-<p>If you need “non-standard scoping”, where you refer to variables inside a data frame as if they are in the global environment, prefer tidy evaluation over non-standard evaluation. See the examples in <a href="https://tidyeval.tidyverse.org">Tidy evaluation</a> and <a href="https://adv-r.hadley.nz/meta-big-picture.html">the metaprogramming chapters in Advanced R</a> for more details.</p>
+<p>If you need “non-standard scoping”, where you refer to variables inside a data frame as if they are in the global environment, prefer tidy evaluation over non-standard evaluation. See the examples in <a href="https://tidyeval.tidyverse.org" class="external-link">Tidy evaluation</a> and <a href="https://adv-r.hadley.nz/meta-big-picture.html" class="external-link">the metaprogramming chapters in Advanced R</a> for more details.</p>
 </div>
-<div id="compose-simple-functions-with-the-pipe" class="section level2">
-<h2 class="hasAnchor">
-<a href="#compose-simple-functions-with-the-pipe" class="anchor"></a>Compose simple functions with the pipe</h2>
+<div class="section level2">
+<h2 id="compose-simple-functions-with-the-pipe">Compose simple functions with the pipe<a class="anchor" aria-label="anchor" href="#compose-simple-functions-with-the-pipe"></a>
+</h2>
 <blockquote>
 <p>No matter how complex and polished the individual operations are, it is often the quality of the glue that most directly determines the power of the system.</p>
 <p>— Hal Abelson</p>
@@ -160,11 +163,11 @@
 <li><p>Avoid mixing side-effects with transformations. Ensure each function either returns an object, or has a side-effect. Don’t do both. (This is a slight simplification: functions called primarily for their side-effects should return the primary input invisibly so that they can still be combined in a pipeline.)</p></li>
 <li><p>Function names should be verbs. The exception is when many functions use the same verb (typically something like “modify”, or “add”, or “compute”). In that case, avoid duplicating the common verb, and instead focus on the noun. A good example of this is ggplot2: almost every function adds something to an existing plot.</p></li>
 </ul>
-<p>An advantage of a pipeable API is that it is not compulsory: if you do not like using the pipe, you can compose functions in whatever way you prepare. Compare this to an operator-overloading approach (such as the <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code> in ggplot2), or an object-composition approach (such as the <code>...</code> approach in httr).</p>
+<p>An advantage of a pipeable API is that it is not compulsory: if you do not like using the pipe, you can compose functions in whatever way you prepare. Compare this to an operator-overloading approach (such as the <code>+</code> in ggplot2), or an object-composition approach (such as the <code>...</code> approach in httr).</p>
 </div>
-<div id="embrace-functional-programming" class="section level2">
-<h2 class="hasAnchor">
-<a href="#embrace-functional-programming" class="anchor"></a>Embrace functional programming</h2>
+<div class="section level2">
+<h2 id="embrace-functional-programming">Embrace functional programming<a class="anchor" aria-label="anchor" href="#embrace-functional-programming"></a>
+</h2>
 <p>R is a functional programming language; embrace it, don’t fight it. If you’re familiar with an object-oriented language like Python or C#, this is going to take some adjustment. But in the long run you will be much better off working with the language, rather than fighting it.</p>
 <p>Generally, this means you should favour:</p>
 <ul>
@@ -173,9 +176,9 @@
 <li><p>Tools that abstract over for-loops, like the apply family of functions or the map functions in purrr.</p></li>
 </ul>
 </div>
-<div id="design-for-humans" class="section level2">
-<h2 class="hasAnchor">
-<a href="#design-for-humans" class="anchor"></a>Design for humans</h2>
+<div class="section level2">
+<h2 id="design-for-humans">Design for humans<a class="anchor" aria-label="anchor" href="#design-for-humans"></a>
+</h2>
 <blockquote>
 <p>Programs must be written for people to read, and only incidentally for machines to execute.</p>
 <p>— Hal Abelson</p>
@@ -200,13 +203,13 @@
 
 
       <footer><div class="tidyverse">
-  <p>tidyverse is a part of the <strong>tidyverse</strong>, an ecosystem of packages designed with common APIs and a shared philosophy. Learn more at <a href="https://tidyverse.org">tidyverse.org</a>.</p>
+  <p>tidyverse is a part of the <strong>tidyverse</strong>, an ecosystem of packages designed with common APIs and a shared philosophy. Learn more at <a href="https://tidyverse.org" class="external-link">tidyverse.org</a>.</p>
 </div>
 
 <div class="author">
   <p>
-    Developed by <a href="http://hadley.nz">Hadley Wickham</a>, <a href="https://www.rstudio.com"><img src="https://www.tidyverse.org/rstudio-logo.svg" alt="RStudio" height="24"></a>.
-    Site built by <a href="https://pkgdown.r-lib.org">pkgdown</a>.
+    Developed by .
+    Site built by <a href="https://pkgdown.r-lib.org" class="external-link">pkgdown</a>.
   </p>
 </div>
 
@@ -215,6 +218,8 @@
 
   
 
+
+  
 
   </body>
 </html>

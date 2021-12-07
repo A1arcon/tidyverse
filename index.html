@@ -39,6 +39,8 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -53,8 +55,8 @@
       <div class="navbar-brand-container">
         <a class="navbar-brand" href="index.html">tidyverse</a>
         <div class="info hidden-xs hidden-sm">
-          <span class="partof">part of the <a href="https://tidyverse.org">tidyverse</a></span>
-          <span class="version version-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.3.1.9000</span>
+          <span class="partof">part of the <a href="https://tidyverse.org" class="external-link">tidyverse</a></span>
+          <span class="version version-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.1.9000</span>
         </div>
       </div>
     </div>
@@ -87,22 +89,23 @@
   <ul class="dropdown-menu" role="menu">
 <li class="dropdown-header">Release notes</li>
     <li>
-      <a href="https://www.tidyverse.org/blog/2019/11/tidyverse-1-3-0/">Version 1.3.0</a>
+      <a href="https://www.tidyverse.org/blog/2019/11/tidyverse-1-3-0/" class="external-link">Version 1.3.0</a>
     </li>
     <li>
-      <a href="https://www.tidyverse.org/blog/2017/11/tidyverse_1.2.0/">Version 1.2.0</a>
+      <a href="https://www.tidyverse.org/blog/2017/11/tidyverse_1.2.0/" class="external-link">Version 1.2.0</a>
     </li>
     <li>
-      <a href="https://blog.rstudio.com/2016/09/15/tidyverse-1-0-0/">Version 1.0.0</a>
+      <a href="https://blog.rstudio.com/2016/09/15/tidyverse-1-0-0/" class="external-link">Version 1.0.0</a>
     </li>
     <li class="divider">
-    <li>
+    </li>
+<li>
       <a href="news/index.html">Change log</a>
     </li>
   </ul>
 </li>
         <li>
-  <a href="https://github.com/tidyverse/tidyverse/">
+  <a href="https://github.com/tidyverse/tidyverse/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -119,52 +122,52 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="tidyverse-" class="section level1">
+<div class="section level1">
 
 <!-- badges: start -->
 
-<div id="overview" class="section level2">
-<h2 class="hasAnchor">
-<a href="#overview" class="anchor"></a>Overview</h2>
+<div class="section level2">
+<h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+</h2>
 <p>The tidyverse is a set of packages that work in harmony because they share common data representations and API design. The <strong>tidyverse</strong> package is designed to make it easy to install and load core packages from the tidyverse in a single command.</p>
-<p>If you’d like to learn how to use the tidyverse effectively, the best place to start is <a href="https://r4ds.had.co.nz">R for data science</a>.</p>
+<p>If you’d like to learn how to use the tidyverse effectively, the best place to start is <a href="https://r4ds.had.co.nz" class="external-link">R for data science</a>.</p>
 </div>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Install from CRAN</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span><span class="op">)</span>
 
 <span class="co"># Or the development version from GitHub</span>
 <span class="co"># install.packages("devtools")</span>
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"tidyverse/tidyverse"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="usage" class="section level2">
-<h2 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h2>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
 <p><code><a href="https://tidyverse.tidyverse.org">library(tidyverse)</a></code> will load the core tidyverse packages:</p>
 <ul>
 <li>
-<a href="https://ggplot2.tidyverse.org">ggplot2</a>, for data visualisation.</li>
+<a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a>, for data visualisation.</li>
 <li>
-<a href="https://dplyr.tidyverse.org">dplyr</a>, for data manipulation.</li>
+<a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a>, for data manipulation.</li>
 <li>
-<a href="https://tidyr.tidyverse.org">tidyr</a>, for data tidying.</li>
+<a href="https://tidyr.tidyverse.org" class="external-link">tidyr</a>, for data tidying.</li>
 <li>
-<a href="https://readr.tidyverse.org">readr</a>, for data import.</li>
+<a href="https://readr.tidyverse.org" class="external-link">readr</a>, for data import.</li>
 <li>
-<a href="https://purrr.tidyverse.org">purrr</a>, for functional programming.</li>
+<a href="https://purrr.tidyverse.org" class="external-link">purrr</a>, for functional programming.</li>
 <li>
-<a href="https://tibble.tidyverse.org">tibble</a>, for tibbles, a modern re-imagining of data frames.</li>
+<a href="https://tibble.tidyverse.org" class="external-link">tibble</a>, for tibbles, a modern re-imagining of data frames.</li>
 <li>
-<a href="https://github.com/tidyverse/stringr">stringr</a>, for strings.</li>
+<a href="https://github.com/tidyverse/stringr" class="external-link">stringr</a>, for strings.</li>
 <li>
-<a href="https://github.com/tidyverse/forcats">forcats</a>, for factors.</li>
+<a href="https://github.com/tidyverse/forcats" class="external-link">forcats</a>, for factors.</li>
 </ul>
 <p>You also get a condensed summary of conflicts with other packages you have loaded:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span>
 <span class="co">#&gt; ── Attaching packages ────────────────────────────────── tidyverse 1.3.1.9000 ──</span>
 <span class="co">#&gt; ✓ ggplot2 3.3.3     ✓ purrr   0.3.4</span>
 <span class="co">#&gt; ✓ tibble  3.1.5     ✓ dplyr   1.0.7</span>
@@ -175,7 +178,7 @@
 <span class="co">#&gt; x dplyr::lag()    masks stats::lag()</span></code></pre></div>
 <p>You can see conflicts created later with <code><a href="reference/tidyverse_conflicts.html">tidyverse_conflicts()</a></code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://www.stats.ox.ac.uk/pub/MASS4/">MASS</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://www.stats.ox.ac.uk/pub/MASS4/" class="external-link">MASS</a></span><span class="op">)</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt; Attaching package: 'MASS'</span>
 <span class="co">#&gt; The following object is masked from 'package:dplyr':</span>
@@ -198,53 +201,53 @@
 <span class="co">#&gt; 1: Yes</span>
 <span class="co">#&gt; 2: No</span></code></pre></div>
 </div>
-<div id="packages" class="section level2">
-<h2 class="hasAnchor">
-<a href="#packages" class="anchor"></a>Packages</h2>
+<div class="section level2">
+<h2 id="packages">Packages<a class="anchor" aria-label="anchor" href="#packages"></a>
+</h2>
 <p>As well as the core tidyverse, installing this package also installs a selection of other packages that you’re likely to use frequently, but probably not in every analysis. This includes packages for:</p>
 <ul>
 <li>
 <p>Working with specific types of vectors:</p>
 <ul>
 <li>
-<a href="https://github.com/tidyverse/hms">hms</a>, for times.</li>
+<a href="https://github.com/tidyverse/hms" class="external-link">hms</a>, for times.</li>
 <li>
-<a href="https://github.com/tidyverse/lubridate">lubridate</a>, for date/times.</li>
+<a href="https://github.com/tidyverse/lubridate" class="external-link">lubridate</a>, for date/times.</li>
 </ul>
 </li>
 <li>
 <p>Importing other types of data:</p>
 <ul>
 <li>
-<a href="https://github.com/wesm/feather">feather</a>, for sharing with Python and other languages.</li>
+<a href="https://github.com/wesm/feather" class="external-link">feather</a>, for sharing with Python and other languages.</li>
 <li>
-<a href="https://github.com/tidyverse/haven">haven</a>, for SPSS, SAS and Stata files.</li>
+<a href="https://github.com/tidyverse/haven" class="external-link">haven</a>, for SPSS, SAS and Stata files.</li>
 <li>
-<a href="https://github.com/r-lib/httr">httr</a>, for web apis.</li>
+<a href="https://github.com/r-lib/httr" class="external-link">httr</a>, for web apis.</li>
 <li>
-<a href="https://github.com/jeroen/jsonlite">jsonlite</a> for JSON.</li>
+<a href="https://github.com/jeroen/jsonlite" class="external-link">jsonlite</a> for JSON.</li>
 <li>
-<a href="https://github.com/tidyverse/readxl">readxl</a>, for <code>.xls</code> and <code>.xlsx</code> files.</li>
+<a href="https://github.com/tidyverse/readxl" class="external-link">readxl</a>, for <code>.xls</code> and <code>.xlsx</code> files.</li>
 <li>
-<a href="https://github.com/tidyverse/rvest">rvest</a>, for web scraping.</li>
+<a href="https://github.com/tidyverse/rvest" class="external-link">rvest</a>, for web scraping.</li>
 <li>
-<a href="https://github.com/r-lib/xml2">xml2</a>, for XML.</li>
+<a href="https://github.com/r-lib/xml2" class="external-link">xml2</a>, for XML.</li>
 </ul>
 </li>
 <li>
 <p>Modelling</p>
 <ul>
 <li>
-<a href="https://github.com/tidyverse/modelr">modelr</a>, for modelling within a pipeline</li>
+<a href="https://github.com/tidyverse/modelr" class="external-link">modelr</a>, for modelling within a pipeline</li>
 <li>
-<a href="https://github.com/tidymodels/broom">broom</a>, for turning models into tidy data</li>
+<a href="https://github.com/tidymodels/broom" class="external-link">broom</a>, for turning models into tidy data</li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="code-of-conduct" class="section level2">
-<h2 class="hasAnchor">
-<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
+<div class="section level2">
+<h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
+</h2>
 <p>Please note that the tidyverse project is released with a <a href="https://tidyverse.tidyverse.org/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
@@ -252,68 +255,69 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=tidyverse">https://​cloud.r-project.org/​package=tidyverse</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/tidyverse/tidyverse/">https://​github.com/​tidyverse/​tidyverse/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/tidyverse/tidyverse/issues">https://​github.com/​tidyverse/​tidyverse/​issues</a>
-</li>
-<li>Learn more at <br><a href="http://r4ds.had.co.nz">http://​r4ds.had.co.nz</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=tidyverse" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/tidyverse/tidyverse/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/tidyverse/tidyverse/issues" class="external-link">Report a bug</a></li>
+<li><a href="http://r4ds.had.co.nz" class="external-link">Learn more</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
 <div class="community">
-<h2>Community</h2>
+<h2 data-toc-skip>Community</h2>
 <ul class="list-unstyled">
 <li><a href="CONTRIBUTING.html">Contributing guide</a></li>
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
 </ul>
 </div>
+
 <div class="citation">
-<h2>Citation</h2>
+<h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html">Citing tidyverse</a></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>
-<a href="http://hadley.nz">Hadley Wickham</a> <br><small class="roles"> Author, maintainer </small>  </li>
-<li>
-<a href="https://www.rstudio.com"><img src="https://www.tidyverse.org/rstudio-logo.svg" alt="RStudio" height="24"></a> <br><small class="roles"> Copyright holder, funder </small>  </li>
+<li><a href="authors.html#citation">Citing tidyverse</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li><a href="https://cran.r-project.org/package=tidyverse"><img src="https://www.r-pkg.org/badges/version/tidyverse" alt="CRAN status"></a></li>
-<li><a href="https://github.com/tidyverse/tidyverse/actions"><img src="https://github.com/tidyverse/tidyverse/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://codecov.io/gh/tidyverse/tidyverse?branch=main"><img src="https://codecov.io/gh/tidyverse/tidyverse/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li>
+<a href="http://hadley.nz" class="external-link">Hadley Wickham</a> <br><small class="roles"> Author, maintainer </small>  </li>
+<li>
+<a href="https://www.rstudio.com" class="external-link"><img src="https://www.tidyverse.org/rstudio-logo.svg" alt="RStudio" width="72"></a> <br><small class="roles"> Copyright holder, funder </small>  </li>
 </ul>
 </div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://cran.r-project.org/package=tidyverse" class="external-link"><img src="https://www.r-pkg.org/badges/version/tidyverse" alt="CRAN status"></a></li>
+<li><a href="https://github.com/tidyverse/tidyverse/actions" class="external-link"><img src="https://github.com/tidyverse/tidyverse/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://codecov.io/gh/tidyverse/tidyverse?branch=main" class="external-link"><img src="https://codecov.io/gh/tidyverse/tidyverse/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+</ul>
 </div>
+
+  </div>
 </div>
 
 
       <footer><div class="tidyverse">
-  <p>tidyverse is a part of the <strong>tidyverse</strong>, an ecosystem of packages designed with common APIs and a shared philosophy. Learn more at <a href="https://tidyverse.org">tidyverse.org</a>.</p>
+  <p>tidyverse is a part of the <strong>tidyverse</strong>, an ecosystem of packages designed with common APIs and a shared philosophy. Learn more at <a href="https://tidyverse.org" class="external-link">tidyverse.org</a>.</p>
 </div>
 
 <div class="author">
   <p>
-    Developed by <a href="http://hadley.nz">Hadley Wickham</a>, <a href="https://www.rstudio.com"><img src="https://www.tidyverse.org/rstudio-logo.svg" alt="RStudio" height="24"></a>.
-    Site built by <a href="https://pkgdown.r-lib.org">pkgdown</a>.
+    Developed by .
+    Site built by <a href="https://pkgdown.r-lib.org" class="external-link">pkgdown</a>.
   </p>
 </div>
 
@@ -322,6 +326,8 @@
 
   
 
+
+  
 
   </body>
 </html>
